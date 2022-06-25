@@ -6,6 +6,14 @@ window.title('Simple Interest Calculator')
 window.geometry("380x400")
 window.configure(bg='lightcyan')
 
+def calculate_interest():
+    p = float(principle.get())
+    r = float(rate.get())
+    t = float(time.get())
+    i = (p*r*t) / 100
+    interest = round(i,2)
+
+show_result.destroy()
 
 heading_label= Label(window,text='Simple Interest Calculator',fg='black',bg='white',font=('Calibri',20),bd=5)
 heading_label.place(x=50,y=20)
