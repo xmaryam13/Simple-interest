@@ -22,22 +22,22 @@ show_result.destroy()
 heading_label= Label(window,text='Simple Interest Calculator',fg='black',bg='white',font=('Calibri',20),bd=5)
 heading_label.place(x=50,y=20)
 
-principle = Label(window,fg='black',text='Principle',bg='white',font=('Calibri',20))
+principle = Label(window,fg='black',text='Rate of interest',bg='white',font=('Calibri',20))
 principle.place(x=20,y=140)
 
 principle_entry = Entry(window, text = '', bd= 2, width=22)
 principle_entry.place(x=150,y=142)
 
-rate = Label(window,fg='black',text='Principle',bg='white',font=('Calibri',20))
+rate = Label(window,fg='black',text='Rate of interest',bg='white',font=('Calibri',20))
 rate.place(x=20,y=180)
 
 rate_entry = Entry(window, text = '', bd= 2, width=22)
 rate_entry.place(x=150,y=182)
 
-time = Label(window,fg='black',text='Principle',bg='white',font=('Calibri',20))
+time = Label(window,fg='black',text='Rate of interest',bg='white',font=('Calibri',20))
 time.place(x=20,y=240)
 
-time_entry = Label(window,fg='black',text='Principle',bg='white',font=('Calibri',20))
+time_entry = Label(window,fg='black',text='Rate of interest',bg='white',font=('Calibri',20))
 time_entry.place(x=150,y=212)
 
 calculate_button = Button(window,text='Calculate',fg='black',font=('Calibri',12),bg='white',bd=4)
