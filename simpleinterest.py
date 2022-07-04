@@ -23,33 +23,34 @@ heading_label= Label(window,text='Simple Interest Calculator',fg='black',bg='whi
 heading_label.place(x=50,y=20)
 
 principle = Label(window,fg='black',text='Rate of interest',bg='white',font=('Calibri',20))
-principle.place(x=20,y=140)
+principle.place(x=20,y=100)
 
 principle_entry = Entry(window, text = '', bd= 2, width=22)
-principle_entry.place(x=150,y=142)
+principle_entry.place(x=210,y=110)
 
 rate = Label(window,fg='black',text='Rate of interest',bg='white',font=('Calibri',20))
-rate.place(x=20,y=180)
+rate.place(x=20,y=140)
 
 rate_entry = Entry(window, text = '', bd= 2, width=22)
-rate_entry.place(x=150,y=182)
+rate_entry.place(x=210,y=152)
 
 time = Label(window,fg='black',text='Rate of interest',bg='white',font=('Calibri',20))
-time.place(x=20,y=240)
+time.place(x=20,y=180)
 
 time_entry = Label(window,fg='black',text='Rate of interest',bg='white',font=('Calibri',20))
-time_entry.place(x=150,y=212)
+time_entry.place(x=200,y=180)
 
 calculate_button = Button(window,text='Calculate',fg='black',font=('Calibri',12),bg='white',bd=4)
-calculate_button.place(x=20,y=260)
+calculate_button.place(x=20,y=230)
 
 result_frame = LabelFrame(window,text='Result',bg='black',font=('Calibri',12))
 result_frame.pack(padx=20,pady=20)
-result_frame.place(x=20,y=300)
+result_frame.place(x=20,y=290)
 
 show_result = Label(result_frame,text=' ',bg='white',font= ('Calibri',12),width=33)
 show_result.place(x=20,y=20)
 show_result.pack()
 
 window.mainloop()
+
 
