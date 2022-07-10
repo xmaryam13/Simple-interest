@@ -22,7 +22,7 @@ def calculate_interest():
 heading_label= Label(window,text='Simple Interest Calculator',fg='black',bg='white',font=('Calibri',20),bd=5)
 heading_label.place(x=50,y=20)
 
-principle = Label(window,fg='black',text='Rate of interest',bg='white',font=('Calibri',20))
+principle = Label(window,fg='black',text='Principle',bg='white',font=('Calibri',20))
 principle.place(x=20,y=100)
 
 principle_entry = Entry(window, text = '', bd= 2, width=22)
@@ -34,13 +34,13 @@ rate.place(x=20,y=140)
 rate_entry = Entry(window, text = '', bd= 2, width=22)
 rate_entry.place(x=210,y=152)
 
-time = Label(window,fg='black',text='Rate of interest',bg='white',font=('Calibri',20))
+time = Label(window,fg='black',text='Time',bg='white',font=('Calibri',20))
 time.place(x=20,y=180)
 
-time_entry = Label(window,fg='black',text='Rate of interest',bg='white',font=('Calibri',20))
-time_entry.place(x=200,y=180)
+time_entry = Entry(window,text='',bd=2,width=22)
+time_entry.place(x=210,y=190)
 
-calculate_button = Button(window,text='Calculate',fg='black',font=('Calibri',12),bg='white',bd=4)
+calculate_button = Button(window,text='Calculate',fg='black',font=('Calibri',12),bg='white',bd=4,command=calculate_interest)
 calculate_button.place(x=20,y=230)
 
 result_frame = LabelFrame(window,text='Result',bg='black',font=('Calibri',12))
