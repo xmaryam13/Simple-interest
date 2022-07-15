@@ -7,9 +7,9 @@ window.geometry("380x400")
 window.configure(bg='lightcyan')
 
 def calculate_interest():
-    p = float(principle.get())
-    r = float(rate.get())
-    t = float(time.get())
+    p = float(principle_entry.get())
+    r = float(rate_entry.get())
+    t = float(time_entry.get())
     i = (p*r*t) / 100
     interest = round(i,2)
     show_result.destroy()
