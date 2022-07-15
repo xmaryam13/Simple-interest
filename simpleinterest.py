@@ -14,7 +14,7 @@ def calculate_interest():
     interest = round(i,2)
     show_result.destroy()
 
-    message = Label(result_frame,text='Interest' +str(p)+ 'at rate of interest' +str(r)+ 'for' +str(t)+ 'years is' +str(interest), bg='white',font=('Calibri',12),width=33)
+    message = Label(result_frame,text='Interest' +str(p)+ 'at rate of interest' +str(r)+ 'for' +str(t)+ 'years is' +str(interest), bg='white',font=('Calibri',12),width=55)
     message.place(x=20,y=40)
     message.pack()
 
@@ -47,7 +47,7 @@ result_frame = LabelFrame(window,text='Result',bg='black',font=('Calibri',12))
 result_frame.pack(padx=20,pady=20)
 result_frame.place(x=20,y=290)
 
-show_result = Label(result_frame,text=' ',bg='white',font= ('Calibri',12),width=33)
+show_result = Label(result_frame,text=' ',bg='white',font= ('Calibri',12),width=55)
 show_result.place(x=20,y=20)
 show_result.pack()
 
